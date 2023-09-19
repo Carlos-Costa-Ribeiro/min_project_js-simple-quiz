@@ -1,0 +1,19 @@
+{
+  "name": "default-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-b": "sass src/assets/sass/bootstrap.scss src/assets/css/bootstrap.css --watch",
+    "sass-m": "sass src/assets/sass/style.scss src/assets/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "Carlos Daniel",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.66.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  }
+}

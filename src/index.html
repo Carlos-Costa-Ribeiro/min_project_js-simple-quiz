@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz simples</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container bg-info d-flex flex-column" style="height: 100vh;">
+        <div class="row bg-secondary mb-5 h-25 align-content-center">
+            <div class="col-12 d-flex justify-content-center">
+                <p class="display-1 text-white">Quiz simples</p>
+            </div>
+        </div>
+
+        <div class="row mx-auto bg-white w-75 position-relative border border-1 border-black mb-3"
+            style="height: 20rem; border-radius: 3rem;">
+            <div><span class="display-1 position-absolute top-0 end-0 me-5 text-black"><span
+                        class="cont"></span>/10</span></div>
+            <div><span class="question display-6 position-absolute bottom-0 start-0 ms-5 mb-5 text-black"></span>
+            </div>
+        </div>
+        <div class="row mx-auto bg-white w-75 border border-1 border-black flex-column p-5 justify-content-center"
+            style="height: 50rem; border-radius: 3rem;">
+            <div class="alt bg-info p-4 text-white my-3" tag="0"
+                style="height: 6rem; border-radius: 2rem; cursor: pointer;"><span class="h1"></span>
+            </div>
+            <div class="alt bg-info p-4 text-white my-3" tag="1"
+                style="height: 6rem; border-radius: 2rem; cursor: pointer;"><span class="h1"></span>
+            </div>
+            <div class="alt bg-info p-4 text-white my-3" tag="2"
+                style="height: 6rem; border-radius: 2rem; cursor: pointer;"><span class="h1"></span>
+            </div>
+            <div class="alt bg-info p-4 text-white my-3" tag="3"
+                style="height: 6rem; border-radius: 2rem; cursor: pointer;"><span class="h1"></span>
+            </div>
+
+            <button type="button" class="next btn btn-success w-25 mx-auto text-center disabled"
+                style="font-size: 2rem;">Salvar</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">e
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Resultados</h1>
+                </div>
+                <div class="modal-body">
+                    <span class="display-1 text-success">ACERTOS = <span class="acert">0</span></span>
+                    <br>
+                    <span class="display-1 text-danger">ERROS = <span class="err">0</span></span>
+                </div>
+                <div class="modal-footer">
+                    <div class="text-center">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

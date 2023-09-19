@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+div .alt:hover {
+  background-color: rgb(51, 54, 54) !important;
+  transition: all .5s ease;
+}
+
+.alt[data-clicked="true"] {
+  background-color: rgb(80, 135, 0) !important;
+  color: rgb(43, 255, 0) !important;
+}
+/*# sourceMappingURL=style.css.map */
