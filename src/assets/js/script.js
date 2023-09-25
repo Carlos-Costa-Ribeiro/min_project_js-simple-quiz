@@ -15,7 +15,7 @@ const dadosAlternativas = [
         resposta: "Júpiter"
     },
     {
-        pergunta: "Qual é o idioma oficial do Brasil?",
+        pergunta: "Qual é o idioma nativo oficial do Brasil?",
         opcoes: ["Espanhol", "Inglês", "Português", "Francês"],
         resposta: "Português"
     },
